@@ -148,6 +148,7 @@ let intro = document.querySelector('.splash');
         {
             sidebarLinks[i].addEventListener("click", () => {
                 sidebar.style.width = "0%";
+                navigation_button.src = "../images/menu-navigation-icon.png";
             });
         }
 
@@ -155,5 +156,6 @@ let intro = document.querySelector('.splash');
         {
             sections[i].addEventListener("click", () => {
                 sidebar.style.width = "0%";
+                navigation_button.src = "../images/menu-navigation-icon.png";
             })
         }
