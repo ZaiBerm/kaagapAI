@@ -17,7 +17,7 @@ include("../php/function-class/functions.php");
 </head>
 
 <body>
-    <div class="splash">
+    <div class="splash" style = "z-index: 200">
         <h1 class="logo-header">
             <span class="logo">kaagap</span><span class="logo">AI</span>
         </h1>
@@ -42,8 +42,38 @@ include("../php/function-class/functions.php");
                     </li>
                 </ul>
             </nav>
+
+            <!-- -->
+            <!-- -->
+            <img src="../images/menu-navigation-icon.png" id="navii">
+            <!-- -->
+            <!-- -->
+
         </form>
     </header>
+
+
+    <!-- -->
+    <!-- -->
+    <div id="side-bar">
+        <ul class="nav_list">
+            <li class="nav_item" id="side">
+                <a href="#Hero" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item" id="side">
+                <a href="#About" class="nav_link">About</a>
+            </li>
+            <li class="nav_item" id="side">
+                <a href="#Contact" class="nav_link">Contact Us</a>
+            </li>
+            <li class="nav_item" id="side">
+                <a href="../php/function-class/onboarding-func.php" class="nav_link" name="login">Login</a>
+            </li>
+        </ul>
+    </div>
+    <!-- -->
+    <!-- -->
+
 
     <main>
         <section class="hero-container" id="Hero">
@@ -91,7 +121,7 @@ include("../php/function-class/functions.php");
             </div>
         </section>
 
-        <section class="contacts-container" id="Contact">
+        <section class="contacts-container" id="Contact" tag>
             <div class="wrapper">
             <ion-icon id="left" class="icon" name="chevron-back"></ion-icon>
                 <div class="contact-contents">

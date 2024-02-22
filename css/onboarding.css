@@ -10,6 +10,12 @@
 
 body{
     min-height: 100vh;
+    
+    /* */
+    /* */
+    padding-top: 80px;
+    /* */
+    /* */
 }
 
 
@@ -22,11 +28,19 @@ a{
 }
 
 header{
-    position: relative;
+
+    /* */
+    /* */
+    position: fixed;
+    background-color: white;
+    /* */
+    /* */
+
     width: 100%;
     height: 80px;
     left: 0;
     top: 0;
+    z-index: 95;
 }
 
 .wrapper{
@@ -74,6 +88,7 @@ li{
 .nav_link:hover{
     color: #F5EE33;
 }
+
 /* hero */
 .hero-container{
     position: relative;
@@ -144,8 +159,9 @@ li{
 .info-container{
     position: relative;
     width: 100%;
-    height: 100vh;
-    padding: 0;
+    min-height: 100vh;
+
+    padding: 30px 0px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -173,6 +189,7 @@ li{
     text-align: justify;
     text-justify: inter-word;
     color: #F5F5F5;
+
 }
 
 /* contact */
@@ -232,7 +249,7 @@ li{
 }
 
 .developers{
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
     overflow-x: auto;
@@ -241,6 +258,7 @@ li{
     scroll-behavior: smooth;
     scrollbar-width: none;
     margin-top: 3rem;
+    gap: 5%;
 }
 
 .developers::-webkit-scrollbar {
@@ -269,7 +287,7 @@ li{
 
 .developers .dev{
     scroll-snap-align: start;
-    width: 75%;
+    min-width: 25%;
     height: 342px;
     list-style: none;
     background: #2A6FB5;
@@ -277,18 +295,19 @@ li{
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 8px;
+    padding: 1rem;
 }
 
 .dev .profile{
     background: #F5EE33;
-    height: 148px;
-    width: 148px;
+    height: 50%;
+    width: 80%;
     border-radius: 50%;
 }
 
 .profile img{
-    width: 140px;
-    height: 140px;
+    width: 97%;
+    height: 97%;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
@@ -316,6 +335,7 @@ li{
     grid-auto-columns: 100%;
     }
 }
+
 
 /* splash */
 .splash{
@@ -357,4 +377,161 @@ li{
 }
 
 
+/**/
+/**/
+/**/
+/**/
+/**/
+
+#navii {
+    width: 25px;
+    display: none;
+}
+
+#side-bar {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    border-left: 1px solid #2A6FB5;
+    z-index: 90;
+
+    transition: all 0.7s;
+}
+
+#side {
+    display: block;
+    padding: 10px;
+    min-width: 200px;
+}
+
+
+@media screen and (min-width: 1441px) {
+    .developers .dev{
+        height: 600px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .developers .dev{
+        height: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /*Contacts*/
+    .developers {
+        gap: 5%;
+    }
+
+    .developers .dev {
+        min-width: 33%;
+    }
+
+    .h3-message {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .developers {
+        gap: 7%;
+    }
+
+    .developers .dev {
+        min-width: 40%;
+    }
+
+    .photo {
+        max-width: 80%;
+    }
+
+    .h3-message {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .developers {
+        gap: 10%;
+    }
+
+    .developers .dev {
+        min-width: 83%;
+    }
+
+    .photo {
+        max-width: 90%;
+    }
+
+    .h3-message {
+        font-size: 1rem;
+    }
+
+    .about-contents {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    #navii {
+        display: inline;
+    }
+
+    .nav_item {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .photo {
+        max-width: 80%;
+    }
+
+    .h3-message {
+        font-size: 1rem;
+    }
+
+    .about-contents {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+   .dev-name {
+    font-size: 0.8rem;
+   } 
+}
+
+@media screen and (max-width: 376px) {
+
+    .developers {
+        gap: 10%;
+    }
+
+    .developers .dev {
+        min-width: 100%;
+    }
+
+    .photo {
+
+        max-width: 100%;
+    }
+}
 

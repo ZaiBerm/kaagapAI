@@ -117,3 +117,43 @@ let intro = document.querySelector('.splash');
         carousel.addEventListener("scroll", infiniteScroll);
         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
         wrapper.addEventListener("mouseleave", autoPlay);
+
+
+        //
+        //
+        //
+        //
+        //
+
+        let navigation_button = document.getElementById("navii");
+        let sidebar = document.getElementById("side-bar");
+        let sidebarLinks = document.getElementsByClassName("nav_item");
+        let sections = document.getElementsByTagName("section");
+
+        navigation_button.addEventListener("click", () => {
+
+            if (sidebar.style.width == "0%")
+            {
+                sidebar.style.width = "40%";
+                navigation_button.src = "../images/cross.png";
+            }
+            else
+            {
+                sidebar.style.width = "0%";
+                navigation_button.src = "../images/menu-navigation-icon.png";
+            } 
+        });
+
+        for (let i = 0; i < sidebarLinks.length; i++)
+        {
+            sidebarLinks[i].addEventListener("click", () => {
+                sidebar.style.width = "0%";
+            });
+        }
+
+        for (let i = 0; i < sections.length; i++)
+        {
+            sections[i].addEventListener("click", () => {
+                sidebar.style.width = "0%";
+            })
+        }
