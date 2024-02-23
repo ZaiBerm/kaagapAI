@@ -96,9 +96,9 @@ include("../php/function-class/functions.php");
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class = "design-div">
+                <div class = "design-div">
+                </div>
 
             </div>
         </section>

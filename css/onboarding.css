@@ -10,6 +10,7 @@
 }
 
 body{
+    background-color: #2A6FB5;
     min-height: 100vh;
     
     /* */
@@ -122,8 +123,8 @@ li{
 }
 
 .photo{
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 65%;
+    max-height: 65%;
 }
 
 .message{
@@ -160,12 +161,10 @@ li{
     position: relative;
     width: 100%;
     min-height: 100vh;
-
-    padding: 30px 0px;
+    background-color: #2A6FB5;
     display: flex;
     align-items: center;
     align-content: center;
-    background-color: #145494;
 }
 
 .about-contents{
@@ -180,7 +179,7 @@ li{
 .about-message{
     position: relative;
     height: 100%;
-    flex: 60%;
+    flex: 70%;
     align-self: center;
     align-items: center;
     align-content: center;
@@ -188,8 +187,8 @@ li{
     gap: 1rem;
     text-align: justify;
     text-justify: inter-word;
-    color: #F5F5F5;
-
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 /* contact */
@@ -200,6 +199,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #0C1E32;
 }
 
 .contact-contents{
@@ -215,7 +215,7 @@ li{
 
 .header h2{
     font-weight: bolder;
-    color: #2A6FB5;
+    color:#F5EE33;
     letter-spacing: 0.2rem;
 }
 
@@ -505,6 +505,7 @@ li{
     .h3-message {
         font-size: 1rem;
     }
+
 
 }
 
