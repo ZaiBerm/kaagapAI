@@ -26,7 +26,7 @@ include("../php/function-class/functions.php");
     <header>
         <form action="../php/onboarding.php" method="post" class="wrapper">
             <nav>
-                <div class="nav-logo">kaagapAI</div>
+                <div class="nav-logo">kaagap<span class = "AI-span">AI</span></div>
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="#Hero" class="nav_link">Home</a>
@@ -96,6 +96,10 @@ include("../php/function-class/functions.php");
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class = "design-div">
+
             </div>
         </section>
 
