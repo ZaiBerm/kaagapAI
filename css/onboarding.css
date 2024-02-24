@@ -10,9 +10,7 @@
 }
 
 body{
-    background-color: #2A6FB5;
     min-height: 100vh;
-    
     /* */
     /* */
     padding-top: 80px;
@@ -30,14 +28,8 @@ a{
 }
 
 header{
-
-    /* */
-    /* */
-    position: fixed;
+    position: absolute;
     background-color: #0C1E32;
-    /* */
-    /* */
-
     width: 100%;
     height: 80px;
     left: 0;
@@ -66,7 +58,7 @@ nav{
 
 .nav-logo{
     left: 10%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 600;
 }
@@ -84,7 +76,7 @@ li{
     font-size: 1rem;
     font-weight: 700;
     transition: all 0.3 ease 0s;
-    color: #fff;
+    color: rgb(228, 230, 235);
 }
 
 .nav_link:hover{
@@ -123,8 +115,8 @@ li{
 }
 
 .photo{
-    max-width: 65%;
-    max-height: 65%;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 .message{
@@ -161,7 +153,6 @@ li{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #2A6FB5;
     display: flex;
     align-items: center;
     align-content: center;
@@ -187,7 +178,7 @@ li{
     gap: 1rem;
     text-align: justify;
     text-justify: inter-word;
-    color: #fff;
+    color: #0C1E32;
     font-size: 1.5rem;
 }
 
@@ -321,7 +312,7 @@ li{
 }
 
 .developers .dev .position {
-    color: #fff;
+    color: rgb(228, 230, 235);
     font-size: 0.8rem;
 }
 
@@ -388,11 +379,11 @@ li{
 }
 
 .hero-contents {
-    padding: 0px 0px 0px 4rem;
+    padding: 0px 5%;
 }
 
 .hero-contents .message {
-    color: #fff;
+    color: rgb(228, 230, 235);
 }
 
 .hero-contents .message .title {
@@ -419,12 +410,14 @@ li{
 
 
 .design-div {
-    height: 100dvh;
+    height: 95dvh;
     width: 100%;
     background-color: #0C1E32;
     position: absolute;
     z-index: -1;
     border-radius: 45%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     transform: translateX(-30%);
 }
 
@@ -437,11 +430,11 @@ li{
     width: 0%;
     height: 100%;
     position: fixed;
-    background-color: white;
+    background-color: #0C1E32;
     right: 0;
     top: 70px;
     bottom: 0;
-    border-left: 1px solid #2A6FB5;
+    border-left: 1px solid #19314d;
     z-index: 90;
 
     transition: all 0.7s;
@@ -468,7 +461,6 @@ li{
 
 }
 
-
 @media screen and (max-width: 1024px) {
 
     /*Contacts*/
@@ -485,8 +477,6 @@ li{
     }
 
 }
-
-
 
 @media screen and (max-width: 768px) {
 
@@ -506,10 +496,17 @@ li{
         font-size: 1rem;
     }
 
+    .hero-contents .message .title {
+        font-size: 4rem;
+    }
+    
+    .hero-contents .message .hero-message {
+        font-size: 1.5rem;
+    }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 537px) {
 
     .developers {
         gap: 10%;
@@ -539,6 +536,55 @@ li{
     .nav_item {
         display: none;
     }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-contents {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero-contents .message .title {
+        font-size: 3rem;
+    }
+    
+    .hero-contents .message .hero-message {
+        font-size: 1.2rem;
+    }
+
+    #first-photo-banner {
+        max-width: 80%;
+    }
+
+    .cta {
+        margin-top: 1rem;
+        background-color: #F5EE33;
+        padding: 0.5rem 0px;
+        max-width: 70%;
+    }
+    
+    .cta-link {
+        font-weight: bold;
+        color:#0C1E32;
+        font-size: 1rem;
+    }
+
+    .design-div {
+        border-radius: 45%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+        
+        transform: translateX(0%);
+        transform: translateY(-28%);
+    }
+
 }
 
 @media screen and (max-width: 426px) {
@@ -562,7 +608,7 @@ li{
 
    .dev-name {
     font-size: 0.8rem;
-   } 
+   }
 }
 
 @media screen and (max-width: 376px) {
@@ -580,4 +626,3 @@ li{
         max-width: 100%;
     }
 }
-

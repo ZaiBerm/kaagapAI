@@ -79,10 +79,9 @@ include("../php/function-class/functions.php");
         <section class="hero-container" id="Hero">
             <div class="wrapper">
                 <div class="hero-contents">
-                    <div class="photo-banner">
+                    <div class="photo-banner" id="first-photo-banner">
                         <img src="../images/chatbot.png" class="photo" />
                     </div>
-
                     <div class="message">
                         <h1 class="title">Welcome!</h1>
                         <h3 class="hero-message">
