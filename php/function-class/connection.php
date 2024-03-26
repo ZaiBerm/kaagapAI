@@ -9,5 +9,4 @@
     die("Failed to connect: " . mysqli_connect_error());
     }
 
-
 ?>
