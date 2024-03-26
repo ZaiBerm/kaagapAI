@@ -1,6 +1,6 @@
 <?php
 
-    $dbhost = "localhost:3308"; /* Should be 3308 but i change it to access onboarding ^^ */
+    $dbhost = "localhost:3308";
     $dbuser = "root";
     $dbpass = "";
     $dbname = "kaagapai";
