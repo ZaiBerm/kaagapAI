@@ -78,25 +78,25 @@ li{
 
 /* hero */
 .hero-container{
+    background-image: url(../images/Backgroundd.png);
+    background-size: cover;
+    background-position: center;
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     padding: 0;
     display: flex;
     align-items: center;
     align-content: center;
-    margin: 80px 0px;
+    margin-top: 80px;
 }
 
 .hero-contents{
     width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 2.4375rem;
     padding: 0;
-    justify-items: center;
-    justify-content: center;
     color: #2A6FB5;
+    margin-left: 17%;
+    display: flex;
 }
 
 .photo-banner{
@@ -109,21 +109,24 @@ li{
 }
 
 .photo{
-    max-width: 60%;
+    max-width: 70%;
     max-height: 60%;
 }
 
-.message{
+.hero-contents .message{
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
-    flex: 40%;
+    width: 40%;
     align-self: center;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    display: grid;
     gap: 1rem;
     text-align: justify;
     text-justify: inter-word;
+    color: rgb(228, 230, 235);
 }
 
 .cta{
@@ -138,7 +141,7 @@ li{
 .cta-link{
     color: #F5EE33;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 800;
     letter-spacing: 0.2rem;
 }
 
@@ -150,13 +153,15 @@ li{
     display: flex;
     align-items: center;
     align-content: center;
+    margin-top: 60px;
 }
 
 .about-contents{
     width: 100%;
     display: flex;
-    column-gap: 2.4375rem;
+    flex-direction: column-reverse;
     padding: 0;
+    gap: 3rem;
     align-content: center;
     justify-content: center;
 }
@@ -196,6 +201,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
 .header h2{
@@ -368,26 +374,41 @@ li{
 /**/
 /**/
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .AI-span {
     color:#F5EE33;
 }
 
-.hero-contents {
-    padding: 0px 5%;
-}
-
-.hero-contents .message {
-    color: rgb(228, 230, 235);
-}
-
 .hero-contents .message .title {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .hero-contents .message .hero-message {
     font-size: 2rem;
 }
 
+#first-photo-banner::before {
+    content: "";
+    height: 10%;
+    width: 30%;
+    background-color: #2A6FB5;
+    opacity: 0.3;
+    position:absolute;
+    bottom: 30px;
+    border-radius: 50%;
+    filter: blur(20px)
+}
+
+#first-photo-banner .photo {
+    filter: drop-shadow(0px 4px 8px rgb(0, 0, 0, 0.4));
+    max-height: 110dvh;
+    transform: translateY(-20px);
+}
 
 
 .cta {
@@ -415,8 +436,13 @@ li{
     transform: translateX(-30%);
 }
 
+.can-we-help {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
 #navii {
-    width: 25px;
+    width: 30px;
     display: none;
 }
 
@@ -440,6 +466,83 @@ li{
     min-width: 200px;
 }
 
+.photo-banner-bots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bot-container {
+    flex: 0 0 300px;
+    position: relative;
+    display: flex;
+}
+
+.about-lower-part {
+    position: relative;
+    flex-direction: column;
+}
+
+.about-lower-part::before {
+    position: absolute;
+    content: "";
+    background-color: #0C1E32;
+    width: 100%;
+    height: 25%;
+    bottom: 5px;
+    border-radius: 50%;
+}
+
+.about-h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.tooltip {
+    background:rgb(12, 30, 50, 0.5);
+    width: 80%;
+    max-height: 300px;
+    position: absolute;
+    padding: 2rem;
+    border-radius: 50%;
+    border-bottom-right-radius: 0px;
+    top: 0px;
+    left: -150px;
+    opacity: 0;
+}
+
+.tooltip h3{
+    color:#F5EE33;
+    text-align: center;
+}
+
+.tooltip h3 span{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.tooltip p{
+    color:#fff;
+    text-align: center
+}
+
+.bot-container img {
+    width: 100%;
+    height: auto;
+}
+
+.bot-container:hover .tooltip {
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+
+.h3-message {
+    font-size: 2rem;
+}
+
+/**Queries**/
 
 @media screen and (min-width: 1441px) {
     .developers .dev{
@@ -448,31 +551,42 @@ li{
 
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1036px) {
     .developers .dev{
         height: 400px;
     }
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1283px) {
 
-    /*Contacts*/
-    .developers {
-        gap: 5%;
+    .bot-container {
+        flex: 0 0 230px;
     }
 
-    .developers .dev {
-        min-width: 33%;
+    .bot-container:hover .tooltip {
+        opacity: 0;
     }
-
-    .h3-message {
-        font-size: 1rem;
-    }
-
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+
+    .hero-container{
+        background-image: url(../images/Backgroundd_tablet.png);
+        background-size: cover;
+        background-position: center;
+        align-items: start;
+    }
+
+    .hero-contents {
+        margin-left: 0px;
+        justify-content: center;
+        padding-top: 4%;
+    }
+
+    .hero-contents .message {
+        width: 90%;
+    }
 
     .developers {
         gap: 7%;
@@ -483,24 +597,46 @@ li{
     }
 
     .photo {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .h3-message {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .hero-contents .message .title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .hero-contents .message .hero-message {
         font-size: 1.5rem;
     }
 
+    .cta {
+        margin-top: 1rem;
+        background-color: #F5EE33;
+        padding: 0.5rem 0px;
+        max-width: 70%;
+    }
+    
+    .cta-link {
+        font-weight: bold;
+        color:#0C1E32;
+        font-size: 1.3rem;
+    }
+
+    h2, .about-h1 {
+        font-size: 2rem;
+    }
+
+    .about-lower-part::before {
+        height: 70%;
+        bottom: 50px;
+    }
+
 }
 
-@media screen and (max-width: 537px) {
+@media screen and (max-width: 580px) {
 
     .developers {
         gap: 10%;
@@ -515,12 +651,12 @@ li{
     }
 
     .h3-message {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .about-contents {
         flex-direction: column-reverse;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     #navii {
@@ -539,7 +675,7 @@ li{
 
     .hero-contents {
         flex-direction: column-reverse;
-        gap: 3rem;
+        gap: 1rem;
         align-items: center;
     }
 
@@ -548,47 +684,42 @@ li{
     }
     
     .hero-contents .message .hero-message {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     #first-photo-banner {
         max-width: 80%;
     }
 
-    .cta {
-        margin-top: 1rem;
-        background-color: #F5EE33;
-        padding: 0.5rem 0px;
-        max-width: 70%;
-    }
-    
-    .cta-link {
-        font-weight: bold;
-        color:#0C1E32;
-        font-size: 1rem;
+    /**.about-lower-part::before {
+        display: none;
     }
 
-    .design-div {
-        border-radius: 45%;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 40%;
-        border-bottom-right-radius: 40%;
-        
-        transform: translateX(0%);
-        transform: translateY(-28%);
-    }
+    .photo-banner-bots {
+        display: none;
+    }**/
 
+}
+
+@media screen and (max-width: 544px) {
+
+    .bot-container {
+        flex: 0 0 150px;
+    }
 }
 
 @media screen and (max-width: 426px) {
 
+    .hero-contents .message .hero-message {
+        font-size: 1.2rem;
+    }
+
     .photo {
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .h3-message {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .about-contents {
@@ -596,8 +727,8 @@ li{
         gap: 3rem;
     }
 
-    h2 {
-        font-size: 1.1rem;
+    h2, .about-h1 {
+        font-size: 1.3rem;
     }
 
    .dev-name {
@@ -605,7 +736,7 @@ li{
    }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 384px) {
 
     .developers {
         gap: 10%;
@@ -618,5 +749,14 @@ li{
     .photo {
 
         max-width: 100%;
+    }
+
+    .bot-container {
+        flex: 0 0 100px;
+    }
+
+    .about-lower-part::before {
+        height: 60%;
+        bottom: 30px;
     }
 }

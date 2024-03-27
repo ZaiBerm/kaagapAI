@@ -79,9 +79,6 @@ include("../php/function-class/functions.php");
         <section class="hero-container" id="Hero">
             <div class="wrapper">
                 <div class="hero-contents">
-                    <div class="photo-banner" id="first-photo-banner">
-                        <img src="../images/chatbot.png" class="photo" />
-                    </div>
                     <div class="message">
                         <h1 class="title">Welcome!</h1>
                         <h3 class="hero-message">
@@ -95,18 +92,51 @@ include("../php/function-class/functions.php");
                         </div>
                     </div>
                 </div>
-
-                <div class = "design-div">
-                </div>
-
             </div>
         </section>
 
         <section class="info-container" id="About">
             <div class="wrapper">
                 <div class="about-contents">
-                    <div class="photo-banner">
-                        <img src="../images/chatbot2.png" class="photo" />
+                    <div class="about-lower-part">
+
+                        <h1 class="about-h1">NEED OUR ASSISTANCE?</h1>
+                        <div class="photo-banner-bots">
+
+                            <div class="bot-container">
+                                <img src="../images/Emran.png" class = "info-emran">
+                                <div class="tooltip">
+                                    <h3>Hello, I am <span>Emran<span></h3>
+                                    <p>I can be your smart and reliable assistant.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bot-container">
+                                <img src="../images/An.png" class = "info-emran">
+                                <div class="tooltip">
+                                    <h3>Hello, I am <span>An<span></h3>
+                                    <p>I am your kind and sweet assistant, I am always here if you need some helpful advice.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bot-container">
+                                <img src="../images/Akachi.png" class = "info-emran">
+                                <div class="tooltip">
+                                    <h3>Hello, I am <span>Akachi<span></h3>
+                                    <p>Your cool and artistic assistant, you can always count on me!</p>
+                                </div>
+                            </div>
+        
+                            <div class="bot-container">
+                                <img src="../images/Karabo.png" class = "info-emran">
+                                <div class="tooltip">
+                                    <h3>Hello, I am <span>Karabo<span></h3>
+                                    <p>My name means "An Answer from God". I'm here if you need a friend that you can share your burdens with.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="about-message">
@@ -126,7 +156,9 @@ include("../php/function-class/functions.php");
 
         <section class="contacts-container" id="Contact" tag>
             <div class="wrapper">
-            <ion-icon id="left" class="icon" name="chevron-back"></ion-icon>
+            <ion-icon id="left" class="icon" name="chevron-back">
+                <
+            </ion-icon>
                 <div class="contact-contents">
                     <div class="header"><h2>MEET OUR TEAM</h2></div>
                     <ul class="developers">
@@ -186,7 +218,9 @@ include("../php/function-class/functions.php");
                             <span class="position">Documentation</span>
                         </li>
                     </ul>
-                    <ion-icon id="right" class="icon" name="chevron-forward"></ion-icon>
+                    <ion-icon id="right" class="icon" name="chevron-forward">
+                        >
+                    </ion-icon>
                 </div>
             </div>
         </section>

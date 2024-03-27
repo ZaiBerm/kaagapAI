@@ -135,7 +135,7 @@ let intro = document.querySelector('.splash');
             if (sidebar.style.width == "0%")
             {
                 sidebar.style.width = "40%";
-                navigation_button.src = "../images/cross.png";
+                navigation_button.src = "../images/yellow-cross.png";
             }
             else
             {
